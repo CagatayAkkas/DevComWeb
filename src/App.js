@@ -7,11 +7,12 @@ import Categories from "./Categories";
 import items from "./data";
 import Ethernaut from "./Pages/Ethernaut";
 import Algoritmalar from "./Pages/Algoritmalar";
-
+import { EthernautItems } from "./data";
 const allCategories = ["all", ...new Set(items.map((item) => item.category))];
 
 function App() {
   const [menuItems, setMenuItems] = useState(items);
+  const [ethernautItems, setEthernautItems] = useState(EthernautItems);
   const [categories, setCategories] = useState(allCategories);
 
   const filterItems = (category) => {
@@ -45,12 +46,13 @@ function App() {
                   <h2>Ethernaut Görevleri </h2>
                   <div className="underline"></div>
                 </div>
-                <Categories categories={categories} filterItems={filterItems} />
-                <Ethernaut items={menuItems} />
+
+                <Ethernaut items={ethernautItems} />
               </section>
             </Route>
-            <Route path="/Ethernaut" component={Ethernaut} />
-            <Route path="/Algoritmalar" component={Algoritmalar} />
+            <Route path="/Algoritmalar">
+              <Algoritmalar />
+            </Route>
           </Switch>
         </Router>
       </main>

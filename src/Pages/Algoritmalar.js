@@ -1,12 +1,13 @@
 import React from "react";
+import AlgorithmViewer from "./AlgorithmViewer";
 
-const EthernautPage = () => {
+const Algoritmalar = () => {
   return (
-    <div>
-      <h1>Algoritmalar Sayfası</h1>
-      {/* Add specific content for Ethernaut page */}
-    </div>
+    <section>
+      <h2>Algoritmalar</h2>
+      <AlgorithmViewer />
+    </section>
   );
 };
 
-export default EthernautPage;
+export default Algoritmalar;

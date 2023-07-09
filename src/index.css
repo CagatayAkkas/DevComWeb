@@ -323,3 +323,44 @@ nav {
     height: 150px;
   }
 }
+.algorithm-viewer {
+  margin-top: 2rem;
+}
+
+.language-selector {
+  margin-bottom: 1rem;
+}
+
+.language-selector label {
+  margin-right: 0.5rem;
+}
+
+.language-selector select {
+  padding: 0.25rem;
+}
+
+.algorithm-list {
+  margin-bottom: 1rem;
+}
+
+.algorithm-list li {
+  margin-bottom: 0.5rem;
+}
+
+.code-viewer {
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  padding: 10px;
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.code-viewer pre {
+  margin: 0;
+}
+
+.code-viewer code {
+  display: block;
+  white-space: pre;
+  font-family: "Courier New", Courier, monospace;
+}
