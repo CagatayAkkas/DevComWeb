@@ -1,13 +1,15 @@
 import React from "react";
 
-const Menu = ({ items }) => {
+const Ethernaut = ({ items }) => {
   return (
     <div className="section-center">
-      {items.map((menuItem) => {
-        const { id, title, img, desc, price } = menuItem;
+      {items.map((menuItems) => {
+        const { id, title, img, desc, price, url } = menuItems; // Add 'url' to destructuring
         return (
           <article key={id} className="menu-item">
-            <img src={img} alt={title} className="photo" />
+            <a href={url}>
+              <img src={img} alt={title} className="photo" />
+            </a>
             <div className="item-info">
               <header>
                 <h4>{title}</h4>
@@ -22,4 +24,4 @@ const Menu = ({ items }) => {
   );
 };
 
-export default Menu;
+export default Ethernaut;

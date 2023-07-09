@@ -3,18 +3,23 @@ import { FaBehance, FaDiscord, FaLinkedin, FaTwitter } from "react-icons/fa";
 export const links = [
   {
     id: 1,
-    url: "/",
+    url: "/Yol Haritaları",
     text: "Yol Haritaları",
   },
   {
     id: 2,
-    url: "/LeetCode",
+    url: "/",
     text: "LeetCode",
   },
   {
     id: 3,
     url: "/Ethernaut",
     text: "Ethernaut",
+  },
+  {
+    id: 4,
+    url: "/Algoritmalar",
+    text: "Algoritmalar",
   },
 ];
 
@@ -42,6 +47,7 @@ const menu = [
     category: "breakfast",
     price: 15.99,
     img: "./images/item-1.jpeg",
+    url: "https://www.youtube.com/@CagatayAkkas/videos",
     desc: `I'm baby woke mlkshk wolf bitters live-edge blue bottle, hammock freegan copper mug whatever cold-pressed `,
   },
   {
@@ -107,6 +113,17 @@ const menu = [
     price: 16.99,
     img: "./images/item-9.jpeg",
     desc: `skateboard fam synth authentic semiotics. Live-edge lyft af, edison bulb yuccie crucifix microdosing.`,
+  },
+];
+export const Ethernaut = [
+  {
+    id: 1,
+    title: "buttermilk pancakes",
+    category: "breakfast",
+    price: 15.99,
+    img: "./images/item-1.jpeg",
+    url: "https://www.youtube.com/@CagatayAkkas/videos",
+    desc: `I'm baby woke mlkshk wolf bitters live-edge blue bottle, hammock freegan copper mug whatever cold-pressed `,
   },
 ];
 export default menu;
