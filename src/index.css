@@ -251,22 +251,23 @@ nav {
   justify-content: center;
 }
 .filter-btn {
-  background: transparent;
-  border-color: transparent;
+  background-color: var(--clr-primary-5);
+  border: none;
+  color: var(--clr-white);
   font-size: 1rem;
   text-transform: capitalize;
   margin: 0 0.5rem;
   letter-spacing: 1px;
   padding: 0.375rem 0.75rem;
-  color: var(--clr-gold);
   cursor: pointer;
   transition: var(--transition);
   border-radius: var(--radius);
 }
+
 .filter-btn:hover {
-  background: var(--clr-gold);
-  color: var(--clr-white);
+  background-color: var(--clr-primary-4);
 }
+
 .section-center {
   width: 90vw;
   margin: 0 auto;
@@ -323,12 +324,20 @@ nav {
     height: 150px;
   }
 }
+
+/* ... Existing styles ... */
 .algorithm-viewer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   margin-top: 2rem;
 }
 
 .language-selector {
   margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
 }
 
 .language-selector label {
@@ -348,11 +357,15 @@ nav {
 }
 
 .code-viewer {
-  background-color: #f9f9f9;
-  border: 1px solid #ccc;
+  background-color: #1e1e1e;
+  color: var(--clr-white);
+  border: 1px solid #383838;
   padding: 10px;
-  max-height: 300px;
   overflow-y: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem; /* Added margin */
 }
 
 .code-viewer pre {
@@ -363,4 +376,10 @@ nav {
   display: block;
   white-space: pre;
   font-family: "Courier New", Courier, monospace;
+  text-align: center;
+}
+
+/* Additional CSS for spacing */
+.algorithm-viewer > div {
+  margin-bottom: 1rem;
 }
