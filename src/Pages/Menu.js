@@ -9,7 +9,7 @@ const Menu = ({ items }) => {
           <article key={id} className="menu-item">
             <a href={url}>
               <header>
-                <h4>{title}</h4>
+                <h4 style={{ color: "black" }}>{title}</h4>
               </header>
               <img src={img} alt={title} className="photo" />
             </a>

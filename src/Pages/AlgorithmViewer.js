@@ -1,7 +1,8 @@
-import React, { useState } from "react";
+import { useState } from "react";
+import { CopyToClipboard } from "react-copy-to-clipboard";
+import { FiCopy } from "react-icons/fi";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { twilight } from "react-syntax-highlighter/dist/esm/styles/prism";
-
 const AlgorithmViewer = () => {
   const [selectedLanguage, setSelectedLanguage] = useState("javascript");
   const [selectedAlgorithm, setSelectedAlgorithm] = useState("");
@@ -1360,35 +1361,125 @@ const AlgorithmViewer = () => {
     setSelectedAlgorithm(algorithm);
   };
 
+  const handleCopyCode = () => {
+    // Logic to copy the code to the clipboard
+    // You can implement this based on your preference and requirements
+    // This is just a placeholder implementation
+    console.log("Code copied to clipboard");
+  };
+
   return (
     <div>
-      <div>
+      <div style={{ textAlign: "center" }}>
         <h2>Diller</h2>
-        <button onClick={() => handleLanguageChange("javascript")}>
+        <button
+          style={{
+            margin: "5px",
+            padding: "0.5rem 1rem",
+            fontSize: "1rem",
+            background: "#f4f4f4",
+            border: "1px solid #ccc",
+            borderRadius: "4px",
+            cursor: "pointer",
+          }}
+          onClick={() => handleLanguageChange("javascript")}
+        >
           JavaScript
         </button>
-        <button onClick={() => handleLanguageChange("python")}>Python</button>
-        <button onClick={() => handleLanguageChange("java")}>Java</button>
-        <button onClick={() => handleLanguageChange("cpp")}>C++</button>
+        <button
+          style={{
+            margin: "5px",
+            padding: "0.5rem 1rem",
+            fontSize: "1rem",
+            background: "#f4f4f4",
+            border: "1px solid #ccc",
+            borderRadius: "4px",
+            cursor: "pointer",
+          }}
+          onClick={() => handleLanguageChange("python")}
+        >
+          Python
+        </button>
+        <button
+          style={{
+            margin: "5px",
+            padding: "0.5rem 1rem",
+            fontSize: "1rem",
+            background: "#f4f4f4",
+            border: "1px solid #ccc",
+            borderRadius: "4px",
+            cursor: "pointer",
+          }}
+          onClick={() => handleLanguageChange("java")}
+        >
+          Java
+        </button>
+        <button
+          style={{
+            margin: "5px",
+            padding: "0.5rem 1rem",
+            fontSize: "1rem",
+            background: "#f4f4f4",
+            border: "1px solid #ccc",
+            borderRadius: "4px",
+            cursor: "pointer",
+          }}
+          onClick={() => handleLanguageChange("cpp")}
+        >
+          C++
+        </button>
       </div>
-      <div>
+      <div style={{ textAlign: "center" }}>
         <h2>Algoritmalar</h2>
         {Object.keys(algorithms).map((algorithm) => (
           <button
             key={algorithm}
             onClick={() => handleAlgorithmChange(algorithm)}
+            style={{
+              margin: "5px",
+              padding: "0.5rem 1rem",
+              fontSize: "1rem",
+              background: "#f4f4f4",
+              border: "1px solid #ccc",
+              borderRadius: "4px",
+              cursor: "pointer",
+            }}
           >
             {algorithm}
           </button>
         ))}
       </div>
-      <div>
+      <div style={{ textAlign: "center" }}>
         <h2>Kod</h2>
-        {selectedAlgorithm && (
-          <SyntaxHighlighter language={selectedLanguage} style={twilight}>
-            {algorithms[selectedAlgorithm][selectedLanguage]}
-          </SyntaxHighlighter>
-        )}
+        <div style={{ position: "relative" }}>
+          {selectedAlgorithm && (
+            <SyntaxHighlighter language={selectedLanguage} style={twilight}>
+              {algorithms[selectedAlgorithm][selectedLanguage]}
+            </SyntaxHighlighter>
+          )}
+          {selectedAlgorithm && (
+            <CopyToClipboard
+              text={algorithms[selectedAlgorithm][selectedLanguage]}
+              onCopy={handleCopyCode}
+            >
+              <button
+                style={{
+                  position: "absolute",
+                  top: "0.5rem",
+                  right: "0.5rem",
+                  padding: "0.5rem",
+                  background: "transparent",
+                  border: "none",
+                  outline: "none",
+                  cursor: "pointer",
+                  color: "white",
+                }}
+              >
+                <FiCopy />
+              </button>
+            </CopyToClipboard>
+          )}
+        </div>
       </div>
     </div>
   );
