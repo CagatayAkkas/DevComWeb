@@ -13,13 +13,18 @@ export const links = [
   },
   {
     id: 3,
-    url: "/Ethernaut",
-    text: "Ethernaut",
+    url: "/Algoritmalar",
+    text: "Algoritmalar",
   },
   {
     id: 4,
-    url: "/Algoritmalar",
-    text: "Algoritmalar",
+    url: "/medium",
+    text: "Medium",
+  },
+  {
+    id: 5,
+    url: "/Ethernaut",
+    text: "Ethernaut",
   },
 ];
 
@@ -413,6 +418,64 @@ export const EthernautItems = [
     category: "breakfast",
     img: "./images/27.jpg",
     url: "https://www.youtube.com/watch?v=4d0qO8IYN8Q",
+  },
+];
+export const MediumItems = [
+  {
+    id: 1,
+    title: "Solidity Roadmap 2023",
+    category: "breakfast",
+    img: "./images/1.jpg",
+    desc: "The main terms , titles and road to learn Solidity in 2023.",
+    url: "https://medium.com/gs-developer-community/solidity-roadmap-2023-f9c43c659452?source=collection_home---4------0-----------------------",
+  },
+  {
+    id: 2,
+    title: "Yapay Zeka Grafik Tasarımı Öldürür Mü?",
+    category: "breakfast",
+    img: "./images/1.jpg",
+    desc: "Yapay Zeka (AI) Nedir?",
+    url: "https://medium.com/gs-developer-community/yapay-zek%C3%A2-grafik-tasar%C4%B1m%C4%B1-%C3%B6ld%C3%BCr%C3%BCr-m%C3%BC-a883e294d72a?source=collection_home---4------1-----------------------",
+  },
+  {
+    id: 3,
+    title: "Ada Lovelace",
+    category: "breakfast",
+    img: "./images/1.jpg",
+    desc: "Ilk bilgisayar programlamacisi Augusta Ada Byron 1815'in sonlarında, Londra’da doğdu.Pratikte babasını hiç tanımamış olan, Ada her zaman…",
+    url: "https://medium.com/gs-developer-community/ada-lovelace-dd2d516fb6d9?source=collection_home---4------2-----------------------",
+  },
+  {
+    id: 4,
+    title: "Zero Knowledge Proof Kullanım Alanları",
+    category: "breakfast",
+    img: "./images/1.jpg",
+    desc: "Günümüzde neredeyse tüm insanlık internet üzerinde zaman geçiriyor. Her gün milyarlarca veri üretiliyor ve tüketiliyor. Bu verilerin büyük…",
+    url: "https://medium.com/gs-developer-community/zero-knowledge-proof-kullan%C4%B1m-alanlar%C4%B1-21bb879ca816?source=collection_home---4------3-----------------------",
+  },
+  {
+    id: 5,
+    title: "Sağlık alanında Blok Zinciri teknolojileri",
+    category: "breakfast",
+    img: "./images/1.jpg",
+    desc: "Blok zinciri teknolojisi (blockchain) bir süredir hayatımızda yer alıyor. Peki sağlık alanında block zinciri nasıl kullanılıyor?",
+    url: "https://medium.com/gs-developer-community/sa%C4%9Fl%C4%B1k-alan%C4%B1nda-blok-zinciri-teknolojileri-edf9b7dfd55d?source=collection_home---4------4-----------------------",
+  },
+  {
+    id: 6,
+    title: "Setting Full Development Environment For Solidity",
+    category: "breakfast",
+    img: "./images/1.jpg",
+    desc: "Selam everyone. In every coding language seting up the environment is one of the hardest steps. However for Solidity maybe its the hardest…",
+    url: "https://medium.com/gs-developer-community/setting-full-development-environment-for-solidity-4e6c85650d8e?source=collection_home---4------5-----------------------",
+  },
+  {
+    id: 7,
+    title: "Solidity Tüm Geliştirme Ortamının Hazırlanması",
+    category: "breakfast",
+    img: "./images/1.jpg",
+    desc: "Selamlar herkese. Hangi kodlama dilinde olursa olsun geliştirme ortamının hazırlanması zor ve önemli bir süreçtir. Ancak konu Solidity’ye…",
+    url: "https://medium.com/gs-developer-community/solidity-t%C3%BCm-geli%C5%9Ftirme-ortam%C4%B1n%C4%B1n-haz%C4%B1rlanmas%C4%B1-83da172193ea?source=collection_home---4------6-----------------------",
   },
 ];
 export default menu;
