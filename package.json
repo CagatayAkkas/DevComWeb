@@ -39,6 +39,7 @@
   },
   "devDependencies": {
     "concurrently": "^8.2.0",
-    "nodemon": "^2.0.22"
+    "nodemon": "^2.0.22",
+    "react-vertical-timeline-component": "^3.6.0"
   }
 }

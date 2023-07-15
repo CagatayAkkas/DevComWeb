@@ -7,7 +7,9 @@ import Categories from "./Categories";
 import items from "./data";
 import Ethernaut from "./Pages/Ethernaut";
 import Algoritmalar from "./Pages/Algoritmalar";
+import Roadmaps from "./Pages/Roadmaps";
 import { EthernautItems } from "./data";
+
 const allCategories = ["all", ...new Set(items.map((item) => item.category))];
 
 function App() {
@@ -43,15 +45,17 @@ function App() {
             <Route exact path="/Ethernaut">
               <section className="menu section">
                 <div className="title">
-                  <h2>Ethernaut Görevleri </h2>
+                  <h2>Ethernaut Görevleri</h2>
                   <div className="underline"></div>
                 </div>
-
                 <Ethernaut items={ethernautItems} />
               </section>
             </Route>
             <Route path="/Algoritmalar">
               <Algoritmalar />
+            </Route>
+            <Route path="/roadmaps">
+              <Roadmaps />
             </Route>
           </Switch>
         </Router>
