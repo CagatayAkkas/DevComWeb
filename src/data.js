@@ -3,26 +3,31 @@ import { FaBehance, FaDiscord, FaLinkedin, FaTwitter } from "react-icons/fa";
 export const links = [
   {
     id: 1,
+    url: "/home",
+    text: "Ana Sayfa",
+  },
+  {
+    id: 2,
     url: "/Roadmaps",
     text: "Yol Haritaları",
   },
   {
-    id: 2,
-    url: "/",
+    id: 3,
+    url: "/LeetCode",
     text: "LeetCode",
   },
   {
-    id: 3,
+    id: 4,
     url: "/Algoritmalar",
     text: "Algoritmalar",
   },
   {
-    id: 4,
+    id: 5,
     url: "/medium",
     text: "Medium",
   },
   {
-    id: 5,
+    id: 6,
     url: "/Ethernaut",
     text: "Ethernaut",
   },

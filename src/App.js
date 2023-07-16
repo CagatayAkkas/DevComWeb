@@ -9,6 +9,7 @@ import Ethernaut from "./Pages/Ethernaut";
 import Medium from "./Pages/medium";
 import Algoritmalar from "./Pages/Algoritmalar";
 import Roadmaps from "./Pages/Roadmaps";
+import Home from "./Pages/home";
 import { EthernautItems } from "./data";
 import EthernautImage from "./images/Ethernaut.jpeg";
 
@@ -34,7 +35,7 @@ function App() {
         <Router>
           <Navbar links={links} />
           <Switch>
-            <Route exact path="/">
+            <Route exact path="/LeetCode">
               <section className="menu section">
                 <div className="title">
                   <h2>LeetCode Görevleri</h2>
@@ -44,7 +45,6 @@ function App() {
                 <Menu items={menuItems} />
               </section>
             </Route>
-            // ...previous code...
             <Route exact path="/Ethernaut">
               <section className="menu section">
                 <div className="title">
@@ -83,6 +83,10 @@ function App() {
                 <Medium items={MediumItems} />
               </section>
             </Route>
+            <Route exact path="/home">
+              <Home />
+            </Route>
+            {/* Add any remaining routes here */}
           </Switch>
         </Router>
       </main>
