@@ -3,7 +3,7 @@ import { FaBehance, FaDiscord, FaLinkedin, FaTwitter } from "react-icons/fa";
 export const links = [
   {
     id: 1,
-    url: "/home",
+    url: "/Home",
     text: "Ana Sayfa",
   },
   {

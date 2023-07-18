@@ -9,7 +9,7 @@ import Ethernaut from "./Pages/Ethernaut";
 import Medium from "./Pages/medium";
 import Algoritmalar from "./Pages/Algoritmalar";
 import Roadmaps from "./Pages/Roadmaps";
-import Home from "./Pages/home";
+import Home from "./Pages/Home";
 import { EthernautItems } from "./data";
 import EthernautImage from "./images/Ethernaut.jpeg";
 
@@ -74,6 +74,9 @@ function App() {
             <Route path="/roadmaps">
               <Roadmaps />
             </Route>
+            <Route path="/Home">
+              <Home />
+            </Route>
             <Route exact path="/Medium">
               <section className="menu section">
                 <div className="title">
@@ -83,10 +86,6 @@ function App() {
                 <Medium items={MediumItems} />
               </section>
             </Route>
-            <Route exact path="/home">
-              <Home />
-            </Route>
-            {/* Add any remaining routes here */}
           </Switch>
         </Router>
       </main>

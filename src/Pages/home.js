@@ -1,41 +1,37 @@
 import React from "react";
-import banner from "../images/banner.jpg";
-import banner1 from "../images/banner1.jpg";
+import bannerImage from "../images/banner1.jpg";
+import "../index.css";
+import discordButton from "../images/discord.png";
 
-function Home() {
-  const handleDiscordClick = () => {
-    // Handle the click event for the Discord link
-    // For example, open the Discord link in a new tab
-    window.open("https://discord.gg/PreBDJg48r");
-  };
-
+const HomePage = () => {
   return (
-    <section className="home">
-      <div className="background-image">
-        {/* Replace the 'image-url' with the URL of your big image */}
-        <img src={banner1} alt="Background" />
-
-        <div className="image-overlay">
-          {/* Replace 'Your Text' with the desired text for the overlay */}
-          <h2>Your Text</h2>
-          <p>Some additional information about your website</p>
-
-          {/* Replace 'image-url' with the URL of your clickable image */}
-          <img
-            src={banner}
-            alt="Clickable Image"
-            onClick={handleDiscordClick}
-          />
-
-          {/* Replace 'Your Discord Link' with the desired text for the Discord link */}
-          <p>
-            Join our Discord community:{" "}
-            <a href="https://discord.gg/PreBDJg48r">Gaza getiren davet</a>
-          </p>
+    <div className="home-page">
+      <div className="background-container">
+        <div
+          className="background-image"
+          style={{ backgroundImage: `url(${bannerImage})` }}
+        ></div>
+        <div className="content">
+          <h1></h1>
+          <p></p>
+          <a
+            href="https://discord.gg/PreBDJg48r"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src={discordButton}
+              alt="Discord Button"
+              className="discord-button"
+            />
+          </a>
         </div>
       </div>
-    </section>
+      <footer className="footer">
+        &copy; {new Date().getFullYear()} Developer Community
+      </footer>
+    </div>
   );
-}
+};
 
-export default Home;
+export default HomePage;
