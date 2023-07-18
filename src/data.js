@@ -1,5 +1,11 @@
 import React from "react";
-import { FaBehance, FaDiscord, FaLinkedin, FaTwitter } from "react-icons/fa";
+import {
+  FaBehance,
+  FaDiscord,
+  FaLinkedin,
+  FaTwitter,
+  FaMedium,
+} from "react-icons/fa";
 export const links = [
   {
     id: 1,
@@ -48,6 +54,11 @@ export const social = [
     id: 3,
     url: "https://www.linkedin.com/company/trdevelopercommunity/",
     icon: <FaLinkedin />,
+  },
+  {
+    id: 4,
+    url: "https://medium.com/gs-developer-community",
+    icon: <FaMedium />,
   },
 ];
 const menu = [
