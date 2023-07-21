@@ -5,25 +5,20 @@ Variables
 */
 
 :root {
-  /* dark shades of primary color*/
-  --clr-primary-1: hsl(205, 86%, 17%);
-  --clr-primary-2: hsl(205, 77%, 27%);
+  --clr-primary-1: #ff8c42; /* Roadmap color */
+  --clr-primary-2: #f6f6e9; /* Background color */
   --clr-primary-3: hsl(205, 72%, 37%);
   --clr-primary-4: hsl(205, 63%, 48%);
-  /* primary/main color */
   --clr-primary-5: hsl(205, 78%, 60%);
-  /* lighter shades of primary color */
   --clr-primary-6: hsl(205, 89%, 70%);
   --clr-primary-7: hsl(205, 90%, 76%);
   --clr-primary-8: hsl(205, 86%, 81%);
   --clr-primary-9: hsl(205, 90%, 88%);
   --clr-primary-10: hsl(205, 100%, 96%);
-  /* darkest grey - used for headings */
   --clr-grey-1: hsl(209, 61%, 16%);
   --clr-grey-2: hsl(211, 39%, 23%);
   --clr-grey-3: hsl(209, 34%, 30%);
   --clr-grey-4: hsl(209, 28%, 39%);
-  /* grey used for paragraphs */
   --clr-grey-5: hsl(210, 22%, 49%);
   --clr-grey-6: hsl(209, 23%, 60%);
   --clr-grey-7: hsl(211, 27%, 70%);
@@ -60,7 +55,7 @@ Global Styles
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  background: var(--clr-grey-10);
+  background: var(--clr-primary-2);
   color: var(--clr-grey-1);
   line-height: 1.5;
   font-size: 0.875rem;
@@ -123,15 +118,43 @@ p {
 
 /* section */
 .section {
-  width: 90vw;
-  margin: 0 auto;
-  max-width: var(--max-width);
+  background-color: var(--clr-primary-2);
 }
 
 @media screen and (min-width: 992px) {
   .section {
     width: 95vw;
   }
+}
+
+.square-layout {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  gap: 1rem;
+  height: 300px; /* Change this to adjust the size of the square */
+  width: 300px; /* Same width and height creates a square */
+  justify-items: center;
+}
+
+.item-title {
+  grid-row: 1 / 2;
+}
+
+.item-image {
+  grid-row: 2 / 3;
+  width: 100%;
+  height: 100%;
+}
+
+.item-info {
+  grid-row: 3 / 4;
+  width: 100%;
+}
+
+.photo {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
 }
 
 /*
@@ -383,15 +406,23 @@ nav {
 .algorithm-viewer > div {
   margin-bottom: 1rem;
 }
+.ethernaut-section {
+  background-color: #ecdfd7;
+}
+
+.ethernaut-background {
+  background-color: #ecdfd7;
+}
 
 .ethernaut-description {
   text-align: center;
   margin-bottom: 2rem;
+  background-color: #ecdfd7;
 }
 
 .description-text {
   color: #333;
-  font-size: 1.2rem;
+  font-size: 1.1rem; /* Adjust the font size as desired */
 }
 
 .description-image {
@@ -415,10 +446,14 @@ nav {
 }
 
 .background-image {
-  background-size: cover;
-  background-position: center bottom 20%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
   width: 100%;
-  height: 80%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .content {
@@ -435,18 +470,26 @@ nav {
   padding: 0;
 }
 
-.content p {
-  margin-top: 50px;
-  margin-left: 25%;
-  font-size: 24px; /* Increase the font size as desired */
-  font-weight: bold; /* Make the font thicker */
-  color: white; /* Set the font color to white */
+.content {
+  position: absolute;
+  top: 30vh;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  font-size: 2rem;
+}
+
+.content h1 {
+  margin: 0;
+  padding: 0;
 }
 
 .discord-button {
-  margin-top: 145px;
-  margin-left: 0px;
-  margin-right: 15px;
+  position: absolute;
+  top: 830%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   height: 50px;
 }
 

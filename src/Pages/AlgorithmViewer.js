@@ -1369,7 +1369,7 @@ const AlgorithmViewer = () => {
   };
 
   return (
-    <div>
+    <div style={{ background: "#f6f6e9" }}>
       <div style={{ textAlign: "center" }}>
         <h2>Diller</h2>
         <button
@@ -1377,7 +1377,7 @@ const AlgorithmViewer = () => {
             margin: "5px",
             padding: "0.5rem 1rem",
             fontSize: "1rem",
-            background: "#f4f4f4",
+            background: "#f6f6e9",
             border: "1px solid #ccc",
             borderRadius: "4px",
             cursor: "pointer",
@@ -1391,7 +1391,7 @@ const AlgorithmViewer = () => {
             margin: "5px",
             padding: "0.5rem 1rem",
             fontSize: "1rem",
-            background: "#f4f4f4",
+            background: "#f6f6e9",
             border: "1px solid #ccc",
             borderRadius: "4px",
             cursor: "pointer",
@@ -1405,7 +1405,7 @@ const AlgorithmViewer = () => {
             margin: "5px",
             padding: "0.5rem 1rem",
             fontSize: "1rem",
-            background: "#f4f4f4",
+            background: "#f6f6e9",
             border: "1px solid #ccc",
             borderRadius: "4px",
             cursor: "pointer",
@@ -1419,7 +1419,7 @@ const AlgorithmViewer = () => {
             margin: "5px",
             padding: "0.5rem 1rem",
             fontSize: "1rem",
-            background: "#f4f4f4",
+            background: "#f6f6e9",
             border: "1px solid #ccc",
             borderRadius: "4px",
             cursor: "pointer",
@@ -1439,7 +1439,7 @@ const AlgorithmViewer = () => {
               margin: "5px",
               padding: "0.5rem 1rem",
               fontSize: "1rem",
-              background: "#f4f4f4",
+              background: "#f6f6e9",
               border: "1px solid #ccc",
               borderRadius: "4px",
               cursor: "pointer",
@@ -1453,9 +1453,11 @@ const AlgorithmViewer = () => {
         <h2>Kod</h2>
         <div style={{ position: "relative" }}>
           {selectedAlgorithm && (
-            <SyntaxHighlighter language={selectedLanguage} style={twilight}>
-              {algorithms[selectedAlgorithm][selectedLanguage]}
-            </SyntaxHighlighter>
+            <div style={{ background: "#f6f6e9" }}>
+              <SyntaxHighlighter language={selectedLanguage} style={twilight}>
+                {algorithms[selectedAlgorithm][selectedLanguage]}
+              </SyntaxHighlighter>
+            </div>
           )}
           {selectedAlgorithm && (
             <CopyToClipboard

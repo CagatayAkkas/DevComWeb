@@ -177,7 +177,7 @@ function Roadmaps() {
   return (
     <section className="roadmaps section">
       <div className="title">
-        <h2>Roadmaps</h2>
+        <h2>LeetCode</h2>
         <div className="underline"></div>
       </div>
       <VerticalTimeline>
@@ -185,16 +185,21 @@ function Roadmaps() {
           <VerticalTimelineElement
             key={index}
             className="vertical-timeline-element"
-            contentStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
-            contentArrowStyle={{ borderRight: "7px solid  rgb(33, 150, 243)" }}
-            iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
+            contentStyle={{ background: "#FFA116", color: "#fff" }}
+            contentArrowStyle={{ borderRight: "7px solid  #FFA116" }}
+            iconStyle={{ background: "#FFA116", color: "#fff" }}
             onClick={() => handleTopicClick(topic)}
           >
             <h3 className="vertical-timeline-element-title">{topic.title}</h3>
             <ul>
               {topic.links.map((link, index) => (
                 <li key={index}>
-                  <a href={link.url} target="_blank" rel="noopener noreferrer">
+                  <a
+                    href={link.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={{ color: "#fff" }}
+                  >
                     {link.title}
                   </a>
                 </li>

@@ -1,20 +1,22 @@
 import React from "react";
+import "../index.css";
 
 const Medium = ({ items }) => {
   return (
-    <div className="section-center">
+    <div className="section-center square-layout">
       {items.map((MediumItem) => {
-        const { id, title, img, desc, price, url } = MediumItem;
+        const { id, title, img, desc, url } = MediumItem;
         return (
           <article key={id} className="menu-item">
-            <header>
+            <header className="item-title">
               <h4 style={{ color: "black" }}>{title}</h4>
-              <p className="description-text">{MediumItem.desc}</p>
             </header>
-            <div className="item-info"></div>
-            <a href={url}>
+            <a href={url} className="item-image">
               <img src={img} alt={title} className="photo" />
             </a>
+            <div className="item-info">
+              <p className="description-text">{desc}</p>
+            </div>
           </article>
         );
       })}

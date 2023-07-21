@@ -46,11 +46,14 @@ function App() {
               </section>
             </Route>
             <Route exact path="/Ethernaut">
-              <section className="menu section">
+              <section className="menu section ethernaut-background">
+                {/* Add the ethernaut-background class */}
                 <div className="title">
-                  <h2>Ethernaut Görevleri</h2>
+                  {/* Header with the title "Ethernaut" */}
+                  <h2>Ethernaut</h2>
                   <div className="underline"></div>
                 </div>
+                {/* ... Existing content ... */}
                 <div className="ethernaut-description">
                   <p className="description-text">
                     Ethernaut: OpenZeppelin 'in hazırladığı, Solidity ile
@@ -68,6 +71,7 @@ function App() {
                 <Ethernaut items={ethernautItems} />
               </section>
             </Route>
+
             <Route path="/Algoritmalar">
               <Algoritmalar />
             </Route>
