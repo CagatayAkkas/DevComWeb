@@ -1,12 +1,13 @@
 import React, { useState } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import { MediumItems, links } from "./data";
+import { MediumItems, YoutubeItems, links } from "./data";
 import Navbar from "./Navbar";
 import Menu from "./Pages/Menu";
 import Categories from "./Categories";
 import items from "./data";
 import Ethernaut from "./Pages/Ethernaut";
 import Medium from "./Pages/medium";
+import Youtube from "./Pages/youtube";
 import Algoritmalar from "./Pages/Algoritmalar";
 import Roadmaps from "./Pages/Roadmaps";
 import Home from "./Pages/Home";
@@ -88,6 +89,15 @@ function App() {
                   <div className="underline"></div>
                 </div>
                 <Medium items={MediumItems} />
+              </section>
+            </Route>
+            <Route exact path="/Youtube">
+              <section className="menu section">
+                <div className="title">
+                  <h2>Youtube</h2>
+                  <div className="underline"></div>
+                </div>
+                <Youtube items={YoutubeItems} />
               </section>
             </Route>
           </Switch>

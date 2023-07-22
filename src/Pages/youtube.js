@@ -1,14 +1,14 @@
 import React from "react";
 import "../index.css";
 
-const Medium = ({ items }) => {
+const Youtube = ({ items }) => {
   // Create a copy of the items array and reverse it
   const reversedItems = [...items].reverse();
 
   return (
     <div className="section-center square-layout">
-      {reversedItems.map((MediumItem) => {
-        const { id, title, img, desc, url } = MediumItem;
+      {reversedItems.map((YoutubeItems) => {
+        const { id, title, img, desc, url } = YoutubeItems;
         return (
           <article key={id} className="menu-item">
             <header className="item-title">
@@ -27,4 +27,4 @@ const Medium = ({ items }) => {
   );
 };
 
-export default Medium;
+export default Youtube;

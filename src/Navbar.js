@@ -26,7 +26,9 @@ const Navbar = () => {
     <nav>
       <div className="nav-center">
         <div className="nav-header">
-          <img src={logo} className="logo" alt="logo" />
+          <Link to="/Home">
+            <img src={logo} className="logo" alt="logo" />
+          </Link>
           <button className="nav-toggle" onClick={toggleLinks}>
             <FaBars />
           </button>
