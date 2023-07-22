@@ -1,5 +1,6 @@
 import React from "react";
 import "../index.css";
+import { YoutubeItems } from "../data";
 
 const Youtube = ({ items }) => {
   // Create a copy of the items array and reverse it
@@ -18,7 +19,9 @@ const Youtube = ({ items }) => {
               <img src={img} alt={title} className="photo" />
             </a>
             <div className="item-info">
-              <p className="description-text">{desc}</p>
+              <div className="description-text-container">
+                <p className="description-text">{desc}</p>
+              </div>
             </div>
           </article>
         );

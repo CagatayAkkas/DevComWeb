@@ -424,6 +424,23 @@ nav {
   color: #333;
   font-size: 1.1rem; /* Adjust the font size as desired */
 }
+.medium-description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.youtube-description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+/*Youtube tab */
+.item-description {
+  display: flex;
+  justify-content: center;
+}
 
 .description-image {
   width: 400px;

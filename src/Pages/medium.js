@@ -18,7 +18,9 @@ const Medium = ({ items }) => {
               <img src={img} alt={title} className="photo" />
             </a>
             <div className="item-info">
-              <p className="description-text">{desc}</p>
+              <div className="description-text-container">
+                <p className="description-text">{desc}</p>
+              </div>
             </div>
           </article>
         );

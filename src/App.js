@@ -54,7 +54,6 @@ function App() {
                   <h2>Ethernaut</h2>
                   <div className="underline"></div>
                 </div>
-                {/* ... Existing content ... */}
                 <div className="ethernaut-description">
                   <p className="description-text">
                     Ethernaut: OpenZeppelin 'in hazırladığı, Solidity ile
@@ -88,6 +87,13 @@ function App() {
                   <h2>Medium</h2>
                   <div className="underline"></div>
                 </div>
+                <div className="medium-description">
+                  <p className="description-text">
+                    Yazlarınızı bu sekmeye eklemek için tek yapmanız gereken
+                    Discord sunucumuzdaki ilgili kanala yazılarınızın linkini
+                    göndermek.
+                  </p>
+                </div>
                 <Medium items={MediumItems} />
               </section>
             </Route>
@@ -96,6 +102,13 @@ function App() {
                 <div className="title">
                   <h2>Youtube</h2>
                   <div className="underline"></div>
+                </div>
+                <div className="youtube-description">
+                  <p className="description-text">
+                    Videonuzu bu sekmeye eklemek için tek yapmanız gereken
+                    Discord sunucumuzdaki ilgili kanala video linkinizi
+                    göndermek.
+                  </p>
                 </div>
                 <Youtube items={YoutubeItems} />
               </section>
