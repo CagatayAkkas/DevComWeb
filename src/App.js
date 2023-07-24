@@ -10,7 +10,7 @@ import Medium from "./Pages/medium";
 import Youtube from "./Pages/youtube";
 import Algoritmalar from "./Pages/Algoritmalar";
 import Roadmaps from "./Pages/Roadmaps";
-import Home from "./Pages/Home";
+import Home from "./Pages/home";
 import { EthernautItems } from "./data";
 import EthernautImage from "./images/Ethernaut.jpeg";
 
@@ -89,9 +89,8 @@ function App() {
                 </div>
                 <div className="medium-description">
                   <p className="description-text">
-                    Yazlarınızı bu sekmeye eklemek için tek yapmanız gereken
-                    Discord sunucumuzdaki ilgili kanala yazılarınızın linkini
-                    göndermek.
+                    Yazılarınızın linklerini Discord sunucumuzdaki ilgili kanala
+                    göndererek içeriklerinizi burada sergileyebilirsiniz.
                   </p>
                 </div>
                 <Medium items={MediumItems} />
@@ -105,9 +104,8 @@ function App() {
                 </div>
                 <div className="youtube-description">
                   <p className="description-text">
-                    Videonuzu bu sekmeye eklemek için tek yapmanız gereken
-                    Discord sunucumuzdaki ilgili kanala video linkinizi
-                    göndermek.
+                    Videolarınızın linklerini Discord sunucumuzdaki ilgili
+                    kanala göndererek içeriklerinizi burada sergileyebilirsiniz.
                   </p>
                 </div>
                 <Youtube items={YoutubeItems} />

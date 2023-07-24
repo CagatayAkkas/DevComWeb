@@ -19,11 +19,11 @@ const HomePage = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img
+            {/* <img
               src={discordButton}
               alt="Discord Button"
               className="discord-button"
-            />
+            /> */}
           </a>
         </div>
       </div>

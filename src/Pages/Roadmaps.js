@@ -157,6 +157,10 @@ function Roadmaps() {
           title: "#1046 - Last Stone Weight",
           url: "https://www.youtube.com/watch?v=iRvguQZMess",
         },
+        {
+          title: "#973 - K Closest Points to Origin",
+          url: "https://www.youtube.com/watch?v=BF9uAT3Nv4g",
+        },
       ],
     },
   ];
