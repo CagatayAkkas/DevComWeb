@@ -464,6 +464,22 @@ nav {
   overflow: hidden;
 }
 
+.description-and-image {
+  display: flex;
+  flex-direction: column; /* Changed from 'row' to 'column' */
+  justify-content: center; /* Align content vertically */
+  align-items: center; /* Align content horizontally */
+  padding: 1em;
+}
+
+.website-description {
+  width: 60%;
+  font-size: 1.2em;
+  color: var(--clr-grey-1);
+  text-align: center;
+  user-select: auto; /* Allow text to be selected and copied */
+}
+
 .background-image {
   background-size: contain;
   background-repeat: no-repeat;

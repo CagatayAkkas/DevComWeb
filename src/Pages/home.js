@@ -6,14 +6,22 @@ import discordButton from "../images/discord.png";
 const HomePage = () => {
   return (
     <div className="home-page">
+      <div className="navbar">
+        {/* Your navigation links and other elements in the navbar */}
+      </div>
+      <div className="content"></div>
       <div className="background-container">
-        <div
-          className="background-image"
-          style={{ backgroundImage: `url(${bannerImage})` }}
-        ></div>
-        <div className="content">
-          <h1></h1>
-          <p></p>
+        <div className="description-and-image">
+          <p className="website-description">
+            Sitemiz açık kaynaktır. Sizde sağ üstteki GitHub logosuna tıklayarak
+            kendi sekmenizi ekleyebilirsiniz.
+          </p>
+          <div
+            className="background-image"
+            style={{ backgroundImage: `url(${bannerImage})` }}
+          ></div>
+        </div>
+        <div className="discord-button-container">
           <a
             href="https://discord.gg/PreBDJg48r"
             target="_blank"

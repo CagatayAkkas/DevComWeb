@@ -5,6 +5,7 @@ import {
   FaLinkedin,
   FaTwitter,
   FaMedium,
+  FaGithub,
 } from "react-icons/fa";
 export const links = [
   {
@@ -47,21 +48,26 @@ export const links = [
 export const social = [
   {
     id: 1,
+    url: "https://github.com/CagatayAkkas/DevComWeb",
+    icon: <FaGithub />,
+  },
+  {
+    id: 2,
     url: "https://discord.gg/PreBDJg48r",
     icon: <FaDiscord />,
   },
   {
-    id: 2,
+    id: 3,
     url: "https://twitter.com/_DevCom",
     icon: <FaTwitter />,
   },
   {
-    id: 3,
+    id: 4,
     url: "https://www.linkedin.com/company/trdevelopercommunity/",
     icon: <FaLinkedin />,
   },
   {
-    id: 4,
+    id: 5,
     url: "https://medium.com/gs-developer-community",
     icon: <FaMedium />,
   },
