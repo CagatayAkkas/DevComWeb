@@ -1,10 +1,10 @@
 # DevComWeb
 Selamlar =) web sitemize kendi sekmeni eklemek için gereken komutlar :
 
-1)GitHub'dan halihazırda olan kodları kopyala : 
+1)GitHub'dan halihazırda olan kodları kopyala :   
 git clone https://github.com/CagatayAkkas/DevComWeb.git
 
-2)İlgili klasöre git :
+2)İlgili klasöre git :   
 cd DevComWeb
 
 3)Yeni bir branch oluştur :
