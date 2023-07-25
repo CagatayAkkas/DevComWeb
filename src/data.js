@@ -10,7 +10,7 @@ import {
 export const links = [
   {
     id: 1,
-    url: "/Home",
+    url: "/",
     text: "Ana Sayfa",
   },
   {

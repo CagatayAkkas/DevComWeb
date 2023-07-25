@@ -26,7 +26,7 @@ const Navbar = () => {
     <nav>
       <div className="nav-center">
         <div className="nav-header">
-          <Link to="/Home">
+          <Link to="/">
             <img src={logo} className="logo" alt="logo" />
           </Link>
           <button className="nav-toggle" onClick={toggleLinks}>

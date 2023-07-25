@@ -71,15 +71,11 @@ function App() {
                 <Ethernaut items={ethernautItems} />
               </section>
             </Route>
-
             <Route path="/Algoritmalar">
               <Algoritmalar />
             </Route>
             <Route path="/roadmaps">
               <Roadmaps />
-            </Route>
-            <Route path="/Home">
-              <Home />
             </Route>
             <Route exact path="/Medium">
               <section className="menu section">
@@ -110,6 +106,9 @@ function App() {
                 </div>
                 <Youtube items={YoutubeItems} />
               </section>
+            </Route>
+            <Route exact path="/">
+              <Home />
             </Route>
           </Switch>
         </Router>
