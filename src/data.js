@@ -511,6 +511,14 @@ export const MediumItems = [
     desc: "The main terms , titles and road to learn Solidity in 2023.",
     url: "https://medium.com/gs-developer-community/solidity-roadmap-2023-f9c43c659452?source=collection_home---4------0-----------------------",
   },
+  {
+    id: 8,
+    title: "Go Dilinde Asansör Yönetim Sistemi Simülasyonu",
+    category: "breakfast",
+    img: "./images/Go Dilinde Asansör Yönetim Sistemi Simülasyonu.png",
+    desc: "Asansörlerin çalışma ve karar mekanizması her zaman beni meraklandırmıştır.",
+    url: "https://medium.com/@mhmtali2316/go-dilinde-asans%C3%B6r-y%C3%B6netim-sistemi-sim%C3%BClasyonu-5efe73a20a56",
+  },
 ];
 
 export const YoutubeItems = [
