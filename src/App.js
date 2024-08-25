@@ -86,7 +86,7 @@ function App() {
                 <div className="medium-description">
                   <p className="description-text">
                     Yazılarınızın linklerini Discord sunucumuzdaki ilgili kanala
-                    göndererek içeriklerinizi burada sergileyebilirsiniz.
+                    göndererek içeriklerinizi burada sergileyebilirsiniz =)
                   </p>
                 </div>
                 <Medium items={MediumItems} />
@@ -101,7 +101,8 @@ function App() {
                 <div className="youtube-description">
                   <p className="description-text">
                     Videolarınızın linklerini Discord sunucumuzdaki ilgili
-                    kanala göndererek içeriklerinizi burada sergileyebilirsiniz.
+                    kanala göndererek içeriklerinizi burada sergileyebilirsiniz
+                    =)
                   </p>
                 </div>
                 <Youtube items={YoutubeItems} />

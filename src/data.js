@@ -519,6 +519,22 @@ export const MediumItems = [
     desc: "Asansörlerin çalışma ve karar mekanizması her zaman beni meraklandırmıştır.",
     url: "https://medium.com/@mhmtali2316/go-dilinde-asans%C3%B6r-y%C3%B6netim-sistemi-sim%C3%BClasyonu-5efe73a20a56",
   },
+  {
+    id: 9,
+    title: "Flutter ile Sentry Kullanımı",
+    category: "breakfast",
+    img: "./images/Flutter ile Sentry Kullanımı.png",
+    desc: "Sentry, geliştiricilerin uygulamalarındaki hataları tespit etmelerine ve çözmelerine ...",
+    url: "https://medium.com/gs-developer-community/flutter-ile-sentry-kullan%C4%B1m%C4%B1-66e4e9111ea0",
+  },
+  {
+    id: 10,
+    title: "Test Driven Development ve Behavior Driven Development",
+    category: "breakfast",
+    img: "./images/Test Driven Development ve Behavior Driven Development.png",
+    desc: "TDD ve BDD, türkçelerini Test Odaklı Geliştirme ve Davranış Odaklı Geliştirme... .",
+    url: "https://medium.com/gs-developer-community/test-driven-development-ve-behavior-driven-development-7d1538939f3d",
+  },
 ];
 
 export const YoutubeItems = [
@@ -527,7 +543,6 @@ export const YoutubeItems = [
     title: "Solidity Değişken Tipleri ve Fonksiyonlar - Solidity Temelleri",
     category: "breakfast",
     img: "./images/solidityders1.jpg",
-    //desc: "The main terms , titles and road to learn Solidity in 2023.",
     url: "https://www.youtube.com/watch?v=o2uP76aJDMg",
   },
   {
@@ -535,7 +550,6 @@ export const YoutubeItems = [
     title: "Ether Transferi ve Reentrancy Saldırısı - Solidity Temelleri",
     category: "breakfast",
     img: "./images/solidityders2.jpg",
-    //desc: "The main terms , titles and road to learn Solidity in 2023.",
     url: "https://www.youtube.com/watch?v=4IQiPA5DqUY",
   },
   {
@@ -543,7 +557,6 @@ export const YoutubeItems = [
     title: "MetaMask Cüzdanı Oluşturma - Çeşme kullanımı",
     category: "breakfast",
     img: "./images/metamask.jpg",
-    //desc: "The main terms , titles and road to learn Solidity in 2023.",
     url: "https://www.youtube.com/watch?v=zDUu3LDsk7Q",
   },
   {
@@ -551,7 +564,6 @@ export const YoutubeItems = [
     title: "GitHub Profili Özelleştirme - Yılan Oyunu ve İstatistikler",
     category: "breakfast",
     img: "./images/GITHUB.jpg",
-    //desc: "The main terms , titles and road to learn Solidity in 2023.",
     url: "https://www.youtube.com/watch?v=zDUu3LDsk7Q",
   },
   {
@@ -559,7 +571,6 @@ export const YoutubeItems = [
     title: "Blockchain Fundamentals",
     category: "breakfast",
     img: "./images/Blockchain.jpg",
-    //desc: "The main terms , titles and road to learn Solidity in 2023.",
     url: "https://www.youtube.com/watch?v=xZWKN6sKg04",
   },
   {
@@ -567,7 +578,6 @@ export const YoutubeItems = [
     title: "En Kullanışlı Klavye Kısayolları",
     category: "breakfast",
     img: "./images/71.jpg",
-    //desc: "The main terms , titles and road to learn Solidity in 2023.",
     url: "https://www.youtube.com/watch?v=65hSqlfrbdA",
   },
   {
@@ -575,7 +585,6 @@ export const YoutubeItems = [
     title: "How 100 WPM (Words Per Minute) Looks Like?",
     category: "breakfast",
     img: "./images/100wpm.jpg",
-    //desc: "The main terms , titles and road to learn Solidity in 2023.",
     url: "https://www.youtube.com/watch?v=PANX3XgEbYU",
   },
   {
@@ -583,8 +592,115 @@ export const YoutubeItems = [
     title: "ChatGPT V4 Deneyimim",
     category: "breakfast",
     img: "./images/thum ai.png",
-    //desc: "The main terms , titles and road to learn Solidity in 2023.",
     url: "https://www.youtube.com/watch?v=Hr0EJA1k8jE",
+  },
+  {
+    id: 8,
+    title: "DevCom.web.tr",
+    category: "breakfast",
+    img: "./images/banner1.jpg",
+    url: "https://www.youtube.com/watch?v=FdOr3yz6vKE",
+  },
+  {
+    id: 9,
+    title:
+      "GitHub Profili Özelleştirme - İstatistikler ve Etkinlik Grafiği Hilesi",
+    category: "breakfast",
+    img: "./images/GitHub Profili Özelleştirme - İstatistikler ve Etkinlik Grafiği Hilesi.png",
+    url: "https://www.youtube.com/watch?v=QuhxijeB_GA",
+  },
+  {
+    id: 10,
+    title: "Tarayıcı Savaşları ve OpenAI Olayları",
+    category: "breakfast",
+    img: "./images/Tarayıcı Savaşları ve OpenAI Olayları.png",
+    url: "https://www.youtube.com/watch?v=a2fZ9s8PLVU",
+  },
+  {
+    id: 11,
+    title: "İnsan Telefona Karşı",
+    category: "breakfast",
+    img: "./images/İnsan Telefona Karşı.png",
+    url: "https://www.youtube.com/watch?v=zn-8Hb8PBMk",
+  },
+  {
+    id: 12,
+    title: "Yapay Zeka Yarışları: Gemini vs Grok",
+    category: "breakfast",
+    img: "./images/Yapay Zeka Yarışları Gemini vs Grok.png",
+    url: "https://www.youtube.com/watch?v=AighfDLPc0A",
+  },
+  {
+    id: 13,
+    title: "VR Öldü Mü?",
+    category: "breakfast",
+    img: "./images/VR Öldü Mü.jpg",
+    url: "https://www.youtube.com/watch?v=O-Oeb9VZUsg",
+  },
+  {
+    id: 14,
+    title: "Özet 2023",
+    category: "breakfast",
+    img: "./images/Özet 2023.png",
+    url: "https://www.youtube.com/watch?v=i84n991RpDE",
+  },
+  {
+    id: 15,
+    title: "Meslekler v2024",
+    category: "breakfast",
+    img: "./images/Meslekler v2024.jpg",
+    url: "https://www.youtube.com/watch?v=F2vxeMU7Yg8",
+  },
+  {
+    id: 16,
+    title: "Başarının Yolu.exe",
+    category: "breakfast",
+    img: "./images/Başarının Yolu.exe.jpg",
+    url: "https://www.youtube.com/watch?v=2sRWIjCla0I",
+  },
+  {
+    id: 17,
+    title: "Yemekler ve Hayatlar",
+    category: "breakfast",
+    img: "./images/Yemekler ve Hayatlar.jpg",
+    url: "https://www.youtube.com/watch?v=nTJEHmjnHtE",
+  },
+  {
+    id: 18,
+    title: "Sporlar v2024",
+    category: "breakfast",
+    img: "./images/Sporlar v2024.jpg",
+    url: "https://www.youtube.com/watch?v=S9AtV1odji8",
+  },
+  {
+    id: 19,
+    title: "Bedelli Askerlik ve Acemi Birliği - 2024",
+    category: "breakfast",
+    img: "./images/Bedelli Askerlik ve Acemi Birliği - 2024.jpg",
+    url: "https://www.youtube.com/watch?v=-oXgHsywLJo",
+  },
+  {
+    id: 20,
+    title: "Çiplenen İnsan, Apple'a Dava, NVIDIA'dan Atılım - Durum Raporu",
+    category: "breakfast",
+    img: "./images/Çiplenen İnsan, Apple'a Dava, NVIDIA'dan Atılım - Durum Raporu.jpg",
+    url: "https://www.youtube.com/watch?v=4vCzoSExXzU",
+  },
+  {
+    id: 21,
+    title:
+      "Threads Kapatıldı, Humane AI Pin Patladı, Apple'da Açık Var - Durum Raporu",
+    category: "breakfast",
+    img: "./images/Threads Kapatıldı, Humane AI Pin Patladı, Apple'da Açık Var - Durum Raporu.png",
+    url: "https://www.youtube.com/watch?v=0fSbIdHujb8",
+  },
+  {
+    id: 22,
+    title:
+      "M4 İşlemci Tanıtıldı, Yapay Zeka Papazlar Artıyor, Yapay Ete Yasak - Durum Raporu",
+    category: "breakfast",
+    img: "./images/M4 İşlemci Tanıtıldı, Yapay Zeka Papazlar Artıyor, Yapay Ete Yasak - Durum Raporu.png",
+    url: "https://www.youtube.com/watch?v=UCq2YYVcMSM",
   },
 ];
 export default menu;
